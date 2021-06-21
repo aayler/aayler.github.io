@@ -1,0 +1,188 @@
+/*
+ * Christopher Wool Site
+ * adjustments
+ * Daniel M. Yang
+ * Copyright SRGMF 2013
+ */
+
+/* hide mobile menu on init */
+#mobile_menu {display: none;}
+
+/*CSs for Fluid Columns by Web Experts Nepal / Bhuwan Roka*/
+.one_half, .one_half_last{
+	width:49%; /* 48% */
+}
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth, .one_seventh{ position:relative; margin-right:2%; float:left; } /*margin-right:4%*/
+#post-8 .one_half {margin-right:.7%;}
+
+div#photography .rg-image img, div#worksonpaper .rg-image img { /*photographs and drawings are smaller than paintings*/
+	max-height: 60%;
+	max-width: 80%;
+}
+
+/*tablets*/
+@media only screen and (max-width: 1023px) {
+	#post-8 .one_half {
+		margin-right:2%;
+	}
+	.main_nav {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 823px) {
+	div.rg-caption-wrapper, div.rg-image, div.rg-image-wrapper, div.navbar, nav#site-navigation, div.rg-caption, div.fullcaptions, div.rg-caption p, div.fullcaptions div, div.fullcaptions div p {
+		-webkit-backface-visibility: hidden;
+	}
+	.main_nav {
+		margin: 30px 0;
+		width: 100%;
+	}
+	.one_half_last {
+		padding-left:5px;
+	}
+	/*#wool_title {
+	    clear: none;
+	}*/
+	.es-carousel {
+		width: 100%;
+	}
+	.es-nav span.es-nav-next {
+		right: -2.25%;
+	}
+	.site-header .home-link {
+		background: no-repeat url('../../themes/wool_exhibition/images/tablet-title.png') 0 0;
+		width: 360px;
+		height: 73px;
+		margin: 0;
+	}
+	.position_social {
+		height: 50px;
+	}
+	.es-carousel ul li a:hover {
+		border: none;
+	}
+	.es-carousel ul li:hover {
+		border: solid 1px #999999;
+	}
+}
+
+@media only screen and (max-width: 655px) {
+	.one_half, .one_half_last {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 639px) { /*767*/
+	.main_nav {
+		width: 100%;
+		margin: 0;
+	}
+	.navbar {
+		margin: 15px 0 0 0;
+	}
+	.main-navigation {
+		margin: 0 auto;
+	}
+	.menu-toggle {
+		color: #8E8E8E;
+		border: solid 1px #E3E3E3;
+		padding: 15px 235px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.menu-toggle:before {
+		content: "\FF0B";
+		font-size: 12px;
+		padding-left: 8px;
+		vertical-align: 4px;
+	}
+	.toggled-on .menu-toggle:before {
+		content: "\FF0D";
+	}
+	.toggled-on .nav-menu li a:hover {
+		background-color: #E3E3E3;
+	}
+	#menu-main-menu li {
+		border-left: solid 1px #E3E3E3;
+		border-right: solid 1px #E3E3E3;
+		background-color: #E3E3E3;
+		padding: 0 5px;
+	}
+	#menu-main-menu li a {
+		padding: 15px 0;
+		margin: 0 auto;
+		width: 98%;
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
+		border-bottom: solid 1px #fff;
+	}
+	#menu-main-menu li:last-of-type a {
+		border-bottom: solid 1px #E3E3E3;
+	}
+	.site {padding: 10px;}
+	#main, .entry-content {padding: 0;}
+	.header-ephemera {
+		margin-bottom: 20px;
+	}
+	.entry-content-ephemera {
+		clear: both;
+		width: 100%
+	}
+	.wool-posts {
+		margin: 0;
+		width: 100%;
+	}
+	.site-header .home-link {
+		background: no-repeat url('../../themes/wool_exhibition/images/phone-title.png') 0 0;
+		width: 450px;
+		height: 91px;
+		margin: 0;
+	}
+	.wp-caption {
+		margin:0 auto;
+	}
+	div.sponsors {
+		font-size: 11px;
+	}
+	div.buttons {
+		display: none;
+	}
+}
+
+/* =Fully Responsive Ready Structure by Bhuwan Roka
+#Landscape phones and down#  */
+@media only screen and (max-width: 479px) {
+	.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth, .one_half_last, .one_third_last, .two_third_last, .one_fourth_last, .three_fourth_last, .one_fifth_last, .three_fourth_last, .one_fifth_last, .two_fifth_last, .three_fifth_last, .one_sixth_last, .five_sixth_last {
+		font-size: 26px;
+		line-height: 32px;
+	}
+	#main, .entry-content {padding: 0;}
+	.hentry {padding: 20px 0 0 0;}
+	.one_half {padding: 60px 0 0 0;}
+	.site {padding: 10px;}
+	body, #page, #main {width: 100%;}
+	html {width: 180%;}
+	.rg-thumbs {display: none;}
+	.rg-image-wrapper {padding: 0;}
+	.rg-image-nav a.rg-image-nav-prev {left: -3%;}
+	.rg-image-nav a.rg-image-nav-next {right: -5%;}
+	.rg-image-nav a {display: none;}
+	.rg-image {width: 100%;}
+	#mobile_menu {display: block;z-index: 500;}
+	.wp-caption .wp-caption-text, .cycloneslider-template-standard .cycloneslider-caption-title, .rg-caption p {font-size: 18px;}
+	.entry-title {font-size: 36px;}
+	div.position_social {display: none;}
+	div.cycloneslider-slide.cycle-slide, div.cycloneslider-caption-title, .cycloneslider-template-standard .cycloneslider-slides, div.cycloneslider-slides .cycle-slideshow {overflow:visible !important;}
+	div.entry-content.artworks-content {padding: 60px 0 0 0;}
+	#subnav_container {width: 100%;}
+	ul#subnav li {font-size: 18px;}
+	#subnav_container {margin: 0 0 20px 0;}
+	.site-info {padding-bottom: 100px;}
+	#post-8 .one_half {padding: 0;}
+	#ephemera_intro, .t_caption {font-size: 18px; line-height: 24px;}
+	div#subnav_container.alignright {width: 80%;}
+	/*.entry-content {-webkit-backface-visibility: hidden;}
+	.fullcaptions {-webkit-backface-visibility: visible;}*/
+}

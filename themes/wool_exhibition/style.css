@@ -1,0 +1,1075 @@
+/*
+ Theme Name:     Christopher Wool Microsite
+ Theme URI:      http://example.com/twenty-thirteen-child/
+ Description:    Twenty Thirteen Child Theme
+ Author:         Daniel M. Yang
+ Author URI:     http://guggenheim.org
+ Template:       twentythirteen
+ Version:        1.0.0
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../twentythirteen/style.css');
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/*Add Guggenheim Webfonts*/
+@import url('http://fast.fonts.net/cssapi/30841074-0144-4e15-83ce-7dbb9197fe51.css');
+@import url('https://ssl.typography.com/710324/624620/css/fonts.css');
+
+/* Overriding Thematic's styles for congruity with WP-Admin > Appearance > Header default header text color settings */
+#blog-description { color: #000 }
+
+/*Guggenheim Webfonts*/
+/*Jennifer's fonts from Fonts.com*/
+.Caslon_regular {
+	font-family: 'AdobeCaslonW01-Regular';
+}
+.Caslon_italic {
+	font-family: 'Adobe Caslon W01 It';
+}
+.Caslon_bold {
+	font-family: 'Adobe Caslon W01 Bd';	
+}
+.Caslon_bold_italic {
+	font-family: 'Adobe Caslon W01 Bd It';
+}
+
+/*Laura's Hoefler & Frere-Jones Fonts*/
+
+.verlag-book { 
+	font-family : 'Verlag 4r', 'Verlag A', 'Verlag B'; 
+	font-weight : 400; 
+	font-style : normal; 
+}
+.verlag-bold { 
+	font-family : 'Verlag 7r', 'Verlag A', 'Verlag B';
+	font-weight : 700;
+	font-style : normal;
+}
+.verlag-black {
+	font-family : 'Verlag 8r', 'Verlag A', 'Verlag B';
+	font-weight : 800;
+	font-style : normal;
+}
+.tungsten {
+	font-family : 'Tungsten A', 'Tungsten B';
+	font-weight : 500;
+	font-style : normal;
+}  
+
+/* The same as tungsten, but included to explicitly fill out the font family */
+
+.tungsten-medium {
+	font-family : 'Tungsten A', 'Tungsten B';
+	font-weight : 500;
+	font-style : normal;
+}
+.tungsten-semibold {
+	font-family : 'Tungsten A', 'Tungsten B';
+	font-weight : 600;
+	font-style : normal;
+}
+.tungsten-bold {
+	font-family : 'Tungsten A', 'Tungsten B';
+	font-weight : 700;
+	font-style : normal;
+}
+.tungsten-black {
+	font-family : 'Tungsten A', 'Tungsten B';
+	font-weight : 800;
+	font-style : normal;
+}
+
+/*Wool Exhibit Sprite*/
+
+
+
+img.exhibit_logo{
+	background: url('images/wool-sprite-NEW.png') no-repeat 85.714% 5.607%;
+	width: 274px;
+	height: 56px;
+}
+
+img.social_mono{
+	background: url('images/wool-sprite-NEW.png') no-repeat -5px -69px;
+	width: 231px;
+	height: 24px;
+}
+
+img.social_color{
+	background: url('images/wool-sprite-NEW.png') no-repeat -5px -93px;
+	width: 231px;
+	height: 24px;
+}
+
+img.double_left_mono{
+	background: url('images/wool-sprite-NEW.png') no-repeat -5px -118px;
+	width: 39px;
+	height: 39px;
+}
+
+img.double_right_mono{
+	background: url('images/wool-sprite-NEW.png') no-repeat -60px -118px;
+	width: 39px;
+	height: 39px;	
+}
+
+img.double_left_color{
+	background: url('images/wool-sprite-NEW.png') no-repeat -112px -118px;
+	width: 39px;
+	height: 39px;	
+}
+
+img.double_right_color{
+	background: url('images/wool-sprite-NEW.png') no-repeat -167px -118px;
+	width: 39px;
+	height: 39px;
+}
+
+/*Sprite positioning wrappers*/
+.position_social {
+	width: 100%;
+	height: 64px;
+	padding: 0;
+	float: right;
+/*	background-color: #FC0;*/
+}
+
+.position_social a {
+	height: 22px;
+	display: block;
+}
+
+.position_social ul {
+	padding: 0;
+	margin-top: 0;
+	float: right;
+}
+
+.position_social li {
+	display: inline-block;
+	padding: 0 0 0 0;
+}
+
+.position_social ul li {
+	vertical-align: text-bottom;
+}
+
+.position_social ul a span {
+	visibility: hidden;
+}
+
+.position_social li#facebook a {
+	background: url('images/wool-sprite-NEW.png') no-repeat -5px -69px;
+	width: 22px;
+	height: 22px;
+}
+
+.position_social li#facebook a:hover {
+	background: url('images/wool-sprite-NEW.png') no-repeat -5px -93px;
+}
+
+.position_social li#twitter a {
+	background: url('images/wool-sprite-NEW.png') no-repeat -30px -69px;
+	width: 22px;
+	height: 22px;
+}
+
+.position_social li#twitter a:hover {
+	background: url('images/wool-sprite-NEW.png') no-repeat -30px -93px;
+}
+
+.position_social li#addthis a {
+	background: url('images/wool-sprite-NEW.png') no-repeat -53px -69px;
+	width: 22px;
+	height: 22px;
+}
+
+.position_social li#addthis a:hover {
+	background: url('images/wool-sprite-NEW.png') no-repeat -53px -93px;
+}
+
+.position_social li#guggenheim a {
+	background: url('images/wool-sprite-NEW.png') no-repeat -78px -68px;
+	width: 160px;
+	height: 22px;
+}
+
+.position_social li#guggenheim a:hover {
+	background: url('images/wool-sprite-NEW.png') no-repeat -78px -93px;
+}
+
+.position_logo {
+	width: 96%;
+	height: 57px;	
+/*	background-color: #3FC;*/
+}
+
+.mobile_social {
+    height: 90px;
+    padding: 0;
+    width: 100%;
+}
+
+.mobile_social a {
+	height: 80px;
+	display: block;
+}
+
+.mobile_social ul {
+    margin-top: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.mobile_social ul li {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+}
+
+.mobile_social li#facebook a {
+	background: url('images/iphone-sprite.png') transparent no-repeat -509px -10px;
+	height: 64px;
+	width: 64px;
+}
+
+.mobile_social li#twitter a {
+	background: url('images/iphone-sprite.png') transparent no-repeat -426px -10px;
+	height: 64px;
+	width: 64px;
+}
+
+.mobile_social li#guggenheim a {
+	background: url('images/iphone-sprite.png') transparent no-repeat -20px -22px; 
+	height: 37px;
+	width: 342px;
+}
+
+.mobile_social ul a span {
+    visibility: hidden;
+}
+
+/*Thematic adjustments*/
+#wool_title {
+	clear: right;
+}
+
+#header{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#branding{
+	height: 60px;
+	width: 920px;
+/*	background-color: #FFF;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+p {
+	margin: 0 0 20px;
+}
+/*#main{
+	padding-left: 15px;
+	padding-top: 35px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	width: 895px;
+}*/
+
+.site-header {
+	margin-top: 0;
+}
+
+.site-header .home-link {
+	background: no-repeat url('images/wool-sprite-NEW.png') 0 0;
+	width: 300px;
+	height: 60px;
+	margin: 0;
+}
+
+.site {
+	background-color: #fff;
+	border: none;
+	margin: 0 auto;
+	padding: 10px 30px;
+	max-width: 990px;
+	width: 100%;
+}
+
+.hentry {
+	padding: 26px 0 0 0 ;
+}
+
+.navbar {
+	margin: -16px 0 0 0;
+	border: none;
+	
+}
+
+#main{
+	padding: 0 0 0 30px; 
+	width: 100%;
+}
+
+.wp-caption p.wp-caption-text {
+	padding-top: 6px;
+	padding-right: 5px;
+	padding-bottom: 25px;
+	padding-left: 12px;
+	margin: 0px;
+}
+
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption {
+	color: #220e10;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+#footer {
+	margin-top:22px;
+	border-top-style: none;
+}
+
+.site-footer {
+	background-color: #fff;
+	text-align: left;
+	margin-top: 80px;
+}
+
+#content {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.container {
+	padding: 0;
+}
+
+.entry-header,
+.entry-content,
+.entry-summary,
+.entry-meta {
+	margin: 0 auto;
+	max-width: 900px;
+	width: 100%;
+}
+
+.entry-content { /*prevent hyphenation*/
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	overflow-wrap:normal;
+    word-wrap: normal;
+}
+
+.nav-menu li a {
+	color: #999999;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+	color: #000000;
+	font-style: normal;
+}
+
+ul.nav-menu, div.nav-menu > ul {
+	margin: 0;
+	padding: 0;
+}
+
+#subnav_container {
+	padding: 0;
+	margin: -45px 0 0 0;
+}
+
+ul#subnav li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	padding: 0 20px 0 0;
+	font-size: 11px;
+}
+
+ul#subnav li.active a {
+	color: #000;
+	text-decoration: underline;
+}
+
+#siteinfo{
+	padding-top: 0px;
+	width: 100%;	
+}
+
+.site-info {
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+	padding: 53px 0 80px 0;
+	max-width: 900px;
+}
+
+.page-template-template-page-fullwidth-php #container {
+	margin:0;
+	width:100%;
+}
+
+.page-template-template-page-fullwidth-php #content {
+	margin: 0;
+	width:100%;
+}
+.artworks-content{
+	padding-top: 5px;	
+	margin: -18px 0;
+}
+
+.wp-caption{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-weight: bold;
+}
+.wp-caption-text, .gallery-caption
+{
+	color: #000;
+	font-size: 11px;
+	line-height: normal;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wp-caption p.wp-caption-text
+{
+	padding-top: 6px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin: 0px;
+}
+
+
+/*Guggenheim Font deployments*/
+
+html {
+	font-family: 'AdobeCaslonW01-Regular';
+	font-size: 14px;
+	line-height: 18px;
+}
+
+body {
+	font-size: 14px;
+	line-height: 18px;
+	/*min-width:320px;*/
+	/*font-weight: bold;*/
+}
+
+h1{
+	font-family: 'Tungsten A', 'Tungsten B';
+	font-size: 30px;
+	color: #c10037;
+	font-weight: bold;
+	letter-spacing: 0.03em;	
+}
+
+.entry-title{
+	font-family: 'Tungsten A', 'Tungsten B';
+	font-size: 30px;
+	color: #c10037;
+	font-weight: bold;
+	letter-spacing: 0.03em;		
+}
+
+.top_nav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-left: 20px;
+	font-weight: bold;/*	color: #999999;*/
+}
+
+.bottom_nav{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	font-weight: bold;
+	padding-right: 20px;
+}
+
+#subnav li a, .cycloneslider-caption-title {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Set-up llink font styles*/
+a:link, a:visited{
+	color: #999999;
+	text-decoration: none;
+}
+
+a:active, a:hover{
+	color: #000;
+	text-decoration: none;	
+}
+
+#siteinfo a:active, #siteinfo a:hover
+{
+	color: #000;
+	text-decoration: none;	
+}
+
+.page_title{
+	font-family: 'Tungsten A', 'Tungsten B';
+	font-size: 30px;
+	color: #c10037;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+}
+
+.footer_text{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	padding-top: 10px;
+}
+
+.alignleft {
+    float: left;
+    text-align:left;
+    width:33.33333%;
+}
+.aligncenter {
+    /*float: left;*/
+    text-align:center;
+    width:10%;
+}
+.alignright {
+	float: right;
+	text-align:right;
+	width:100%;
+	vertical-align: text-bottom;
+	/*padding-top: 41px;*/
+}
+
+div#subnav_container.alignright {
+	width: 60%;
+}
+/* ResponsiveImageGallery */
+.rg-image-wrapper{
+	position:relative;
+	padding:15px 90px 20px 90px;
+	background:none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	min-height:20px;
+}
+
+.es-carousel-wrapper {
+	background: none;
+	padding: 0 27px;
+	position: relative;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-moz-box-shadow: 0px 0 0 rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: 0px 0 0 rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0 0 rgba(0, 0, 0, 0.9);
+	margin: -40px 0 20px 0;
+}
+
+.es-carousel {
+	overflow: hidden;
+	background: none;
+	width: 96%; /*94.5*/
+	margin: 0 0 0 2.75%;
+}
+
+.es-carousel ul {
+	padding: 0;
+	overflow-y: hidden;
+}
+
+.rg-view {
+	display: none;
+}
+
+.rg-image-nav a {
+	position: absolute;
+	top: 45%;
+	left: 5.5%;
+	/*background: url(images/wool-sprite-NEW.png) no-repeat 0% 100%;*/
+	width: 48px;
+	height: 6%;
+	text-indent: 0px; /* -9000px */
+	cursor: pointer;
+	opacity: 1;
+	outline: none;
+	font-size: 60px;
+	color: #000;
+	font-weight: normal;
+}
+
+.rg-image-nav a.rg-image-nav-next{
+    right: 1.75%;
+    left:auto;
+    /*background-position:25% 100%;*/
+}
+
+.rg-image-nav a:hover, .es-nav span:hover {
+	color: #c10037;
+}
+
+.es-carousel ul li {
+	overflow-y: visible;
+}
+
+.es-carousel ul li a {
+	display: block;
+	border-style: solid;
+	border-color: #fff;
+	opacity: 1;
+	-webkit-touch-callout: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.es-carousel ul li.selected, .es-carousel ul li a:hover {
+	border: solid 1px #999999;
+}
+
+.es-nav span {
+	background: none;
+	top: 45%; /*50*/
+	left: 2%; /*8px*/
+	width: 10px; /*48px*/
+	height: 30px;
+	margin-top: -4px;
+	text-indent: 0px;
+	font-size: 36px;
+	font-weight: normal;
+}
+
+.es-nav span.es-nav-next {
+	right: 0.75%;
+	background: none;
+	font-weight: normal;
+}
+
+.rg-loading {background-color: #fff;}
+
+.rg-thumbs {
+	padding: 0 140px;
+}
+
+.rg-caption {
+	text-align: left;
+	margin-left: 82px;
+}
+
+.rg-caption p {
+	font-size: 14px;
+	letter-spacing: 0;
+	font-family: Arial, sans-serif;
+	line-height: 16px;
+	padding: 0 15px;
+	text-transform: none;
+	margin-bottom: 48px;
+	font-weight: bold;
+}
+
+.fullcaptions {
+	position: absolute;
+	background-color: #fff;
+	cursor: pointer;
+	text-align: left;
+	line-height: 12px;
+	padding: 12px 15px 0;
+	z-index: 500;
+	display:none;
+}
+
+.fullcaptions p {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.fullcaptions p.captitle {
+	font-size: 14px;
+}
+
+.rg-caption-wrapper {
+	cursor: pointer;
+}
+
+/* Homepage slide */
+.cycloneslider-template-standard {
+	margin-bottom: 10px;
+}
+
+.cycloneslider-template-standard .cycloneslider-caption {
+	position: relative;
+	width: 100%;
+	background: none;
+	color: #000;
+	opacity: 1;
+	top:1%;
+}
+
+.cycloneslider-template-standard .cycloneslider-caption-title {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px 20px 5px 10px;
+}
+
+.cycloneslider-template-standard .cycloneslider-prev .arrow, .cycloneslider-template-standard .cycloneslider-next .arrow {
+	margin: 0;
+	border: none;
+}	
+
+.cycloneslider-prev span.arrow {
+	background: url(images/wool-sprite-NEW.png) no-repeat 0 100%;
+	width: 48px;
+	height: 48px;
+}
+
+.cycloneslider-next span.arrow {
+	background: url(images/wool-sprite-NEW.png) no-repeat 23.5% 100%;
+	width: 48px;
+	height: 48px;
+}
+
+.cycloneslider-prev span.arrow:hover {
+	background-position: -107px 100%;
+}
+
+.cycloneslider-next span.arrow:hover {
+	background-position: 66% 100%;
+}
+
+.cycloneslider-template-standard .cycloneslider-prev {
+	left: 14px;
+}
+
+.cycloneslider-template-standard .cycloneslider-next .arrow {
+	margin-left: -50px;
+}
+
+.cycloneslider-template-standard .cycloneslider-prev, .cycloneslider-template-standard .cycloneslider-next {
+	top: 41.5%;
+	margin-top: 0;
+	border-radius: 0;
+	width: 0;
+	height: 0;
+}	
+
+/* Biography */
+.wp-caption {
+	padding-bottom: 24px;
+}
+
+.wp-caption p.wp-caption-text {
+	padding-top: 14px;
+	padding-left: 10px;
+}
+
+.bio-col-1 {
+	padding-top: 0;
+}
+
+/* Ephemera */
+.header-ephemera {
+	background: url(images/books-posters.png) no-repeat;
+	width: 95px;
+	height: 50px;
+	float: left;
+}
+.entry-content-ephemera {
+	width: 100%;
+}
+
+.t_caption {
+	font-size: 11px;
+	font-weight: bold;
+	max-width: 520px;
+	padding: 7px 0 0 0;
+	margin: 0;
+}
+
+.t_caption p, .t_caption em {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.t_image {
+	padding: 0 0 12px 0;
+	border-bottom: solid 1px #C10037;
+}
+.t_image img {
+	width: 100%;
+}
+
+.wool-posts {
+	width: 57.75%;
+	margin: 0 0 0 173px;
+}
+
+#ephemera_intro {
+	font-family: 'AdobeCaslonW01-Regular';
+	border-top: solid 1px #C10037;
+	border-bottom: solid 1px #C10037;
+	max-width: 1024px; /*520px*/
+	padding: 10px 24px 10px 0;
+	margin: 0 0 24px 0;
+}
+
+.ephemera_share {
+	padding: 0;
+	margin-bottom: 62px;
+	width: 57px;
+}
+.ephemera_share a {
+	display: block;
+	background: url('images/tumblr-sprite.png') no-repeat -128px 0px;
+	width: 57px;
+	height: 26px;
+	float: right;
+}
+
+.ephemera_share a:hover {
+	background: url('images/tumblr-sprite.png') no-repeat -128px -27px;
+}
+
+/* footer */
+ul#menu-footer {
+	font-size: 12px;
+	color: #999999;
+	font-weight: bold;
+	margin: 0 0 0 -40px;
+}
+
+ul#menu-footer li {
+	text-decoration: none;
+	float: left;
+	display: block;
+	padding: 0 15px 0 0 ;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-footer-container {
+	margin-top: 200px;
+}
+
+div.sponsors {
+	font-size: 10px;
+    margin-top: 150px;
+}
+
+/*ephemera sharing*/
+div.buttons {
+	float: right;
+}
+
+ul.button_list li.perma-link {
+	background: url('images/share-sprite.png') no-repeat transparent 0px 0px;
+	width: 53px;
+	height: 36px;
+	list-style-type: none;
+	position: relative;
+}
+
+ul.button_list li.perma-link:hover {
+	background: url('images/share-sprite.png') no-repeat transparent 0px -38px;
+}
+
+ul.button_list li:hover > ul {
+		display: block;
+	}
+
+ul.button_list {
+	padding: 0;
+	margin: 0;
+}
+
+ul.button_list:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	
+ul#addthis_dropdown span {
+    display:none;
+}
+
+ul#addthis_dropdown:before {
+	content: "";
+	height: 0;
+	position: absolute;
+	width: 0;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+	border-bottom: 12px solid #f7f7f7;
+	top:-10%;
+	left:50%;
+	margin-left: -15px;
+}
+
+ul#addthis_dropdown li.ebutton:hover:before {
+	border-bottom-color: rgba(0,0,0,0.05);
+}
+
+ul#addthis_dropdown a {
+	font-weight: 700;
+}
+
+ul.button_list ul {
+	list-style-type: none;
+    display:none;
+	background: #f7f7f7; 
+	border-radius: 6px;
+	padding: 0;
+	margin:0;
+	position: absolute;
+	top: 110%;
+	left: -93%;
+	box-shadow: 0 4px 9px rgba(0,0,0,0.35);
+}
+ul.button_list ul li {
+	float: none; 
+	position: relative;
+	border-top: 1px solid #eeeeee;
+	width:160px;
+	padding: 5px 0;
+}
+ul#addthis_dropdown li:first-child {
+	border-top: none;
+}
+ul.button_list ul li a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgba(0,0,0,0.63);
+}	
+
+ul.button_list ul li a.p6 {
+	padding: 6px 90px 6px 35px;
+}
+
+ul.button_list ul li a.p1 {
+	padding: 6px 62px 6px 35px;
+}
+
+ul.button_list ul li a.p2 {
+	padding: 6px 82px 6px 35px;
+}
+
+ul.button_list ul li a.perma {
+	padding: 6px 62px 6px 35px;
+}
+
+ul.button_list ul li:hover {
+	background: transparent linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.01));
+    background-color: rgba(0,0,0,0.05);
+}
+
+.p6 {
+    background:url('images/dashboard_master_sprite.png') transparent no-repeat 0 -28px;
+    height:30px;
+    width:30px;
+}
+
+.p1 {
+    background:url('images/dashboard_master_sprite.png') transparent no-repeat 0 -60px;
+    height:30px;
+    width:30px;
+}
+
+.p2 {
+    background:url('images/dashboard_master_sprite.png') transparent no-repeat 0 -90px;
+    height:30px;
+    width:30px;
+}
+
+.perma {
+    background:url('images/dashboard_master_sprite.png') transparent no-repeat 0 0;
+    height:30px;
+    width:30px;
+}
+
+/* menu toggle */
+.menu-toggle {
+	padding: 28px 0 0 20px;
+}
+
+/*mobile menu*/
+#mobile_menu {
+	padding: 14px 0 0 0;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	vertical-align: middle;
+	max-width: 960px;
+	text-align: center;
+	border-top: 1px solid #E3E3E3;
+}
+#mobile_menu ul {
+	float: none;
+}
+
+li#guggenheim {
+	padding: 0;
+}
+
+div.fullcaptions, div.rg-caption {
+	-webkit-transition: opacity 250ms ease-in-out;
+	-moz-transition: opacity 250ms ease-in-out;
+	-o-transition: opacity 250ms ease-in-out;
+	transition: opacity 250ms ease-in-out;
+}
+
+/*404*/
+.error404 .page-header {
+	padding-top: 26px;
+}
+
+.error404 .page-wrapper {
+	background-color: #fff;	
+}
+
+.error404 .page-title:before {
+	color: #fff;
+	font-size: 0;
+}
+
+.error404 .page-title {
+	color: #c10037;
+	font-family : 'Tungsten A', 'Tungsten B';
+	font-weight: bold;
+	font-size: 30px;
+	font-style: normal;
+	letter-spacing: 0.03em;
+	padding: 0;
+	text-align: left;
+}
